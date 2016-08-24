@@ -1,0 +1,2 @@
+# MPU6050-dsPIC33EP
+MPU6050 integrated with dsPIC33EP256MU806
