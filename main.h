@@ -1,6 +1,6 @@
 /* 
  * File:   main.h
- * Author: user
+ * Author: JJ
  *
  * Created on March 23, 2015, 4:41 PM
  */
@@ -80,22 +80,6 @@ typedef struct
         #define pgm_read_word_far(addr) pgm_read_word(addr)
         #define pgm_read_dword_far(addr) pgm_read_dword(addr)
         #define pgm_read_float_far(addr) pgm_read_float(addr)
-
-
-void MPU6050_loop() ;
-uint8_t MPU6050_dmpInitialize();
-uint8_t MPU6050_dmpGetLinearAccelInWorld(struct VectorInt16 *v,struct VectorInt16 *vReal,struct Quaternion *q) ;
-uint8_t MPU6050_dmpGetLinearAccel(struct VectorInt16 *v, struct VectorInt16 *vRaw, struct VectorFloat *gravity);
-uint8_t MPU6050_dmpGetAccel(struct VectorInt16 *v, const uint8_t* packet) ;
-uint8_t MPU6050_dmpGetGravity(struct VectorFloat *v,struct Quaternion *q) ;
-uint8_t MPU6050_dmpGetEuler(float *data, struct Quaternion *q) ;
-uint8_t MPU6050_dmpGetQuaternion_integer(int16_t *data, const uint8_t* packet) ;
-uint8_t MPU6050_dmpGetQuaternion(struct Quaternion *q, const uint8_t* packet);
-uint8_t MPU6050_dmpGetYawPitchRoll(float *data, struct Quaternion *q,struct VectorFloat *gravity) ;
-uint16_t MPU6050_dmpGetFIFOPacketSize() ;
-void MPU6050_setup() ;
-void dmpDataReady();
-
 
 #endif	/* MAIN_H */
 
